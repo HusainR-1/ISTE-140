@@ -21,6 +21,65 @@
 
         <!--Define the author of a page-->
         <meta name="author" content="Husain Rupawalla">
+        <style>
+            /*internal CSS in the <head> section of the HTML document*/
+
+                /* Format the whole body */
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                color:#383737;
+            }
+            /* overflow: auto -
+                scrollbar is added to see the rest of the content only when the content is too big
+            */
+            #banner{
+                overflow:auto;
+                padding: 15px;
+                background-color: #e5e5e5;
+                text-align: center;
+            }
+            #content{
+                overflow:auto;
+            }
+        /*Format the menu hyperlinks */
+        #menu a {
+            text-decoration: none; /* remove underline */
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block; /*Displays an element as a block element 
+                It starts on a new line, and takes up the whole width */
+            width: 100%;
+            color: #32526a;
+         }
+         /*Format the menu hyper links hover effects */
+        #menu a:hover { /* you can also change a:visited and a: active */
+            background-color: #678ca7;
+            color:bisque
+        } 
+        /* Format heading 3 in the main div */
+        #main h3 {
+            color: #254b8b
+        }
+        /*Format hyperlinks in the main div */
+        #main a{
+            text-decoration: none;
+            color:#32526a
+        }
+        /* Format the footer */
+        #footer{
+            font-size: smaller;
+            background-color: #e5e5e5;
+            text-align: center;
+            padding: 10px;
+            margin-top: 7px;
+        }
+        /* Format hyperlinks in the footer div */
+        #footer a{
+            text-decoration: none;
+            color:#32526a
+        }
+        </style>
     </head>
     <body>
         <!-- banner div-->
@@ -83,10 +142,10 @@
             <div id="right">
             <h3>Products:</h3>
             <ol>
-                <l1>iPhone</l1>
-                <l1>iPad</l1>
-                <l1>Macintosh Computers</l1>
-                <l1>Apple Watch</l1>
+                <li>iPhone</li>
+                <li>iPad</li>
+                <li>Macintosh Computers</li>
+                <li>Apple Watch</li>
             </ol>
 
             </div><!--closing of right div-->
