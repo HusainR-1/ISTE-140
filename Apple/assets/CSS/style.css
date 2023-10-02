@@ -1,0 +1,61 @@
+/* border-box ensures that all elements (*) are sized the same*/
+* {
+    box-sizing:border-box;
+}
+/* float property is used for positioning and formatting content
+left - The element floats to the left of its container */
+
+/*Padding is used to create space around an element's content,
+inside of any defined borders*/
+
+/*logo and title */
+#logo {
+    float: left;
+    width: 20%;
+    padding: 0 20px; /* top and bottom paddings 0px right and left paddings are 20px */
+}
+
+#webTitle {
+    float:left;
+    width:80%;
+    padding: 0 20px;
+}
+
+/* menu */
+#menu{
+    float:left;
+    width: 20%;
+    text-align: center;
+}
+
+/* main content */
+#main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+
+/*images */
+.column {
+    float: left;
+    width: 25%
+}
+
+/* Clear floats after image container (row)
+when you want an element after a floated element to sit below the float.*/
+#imagesRow::after{
+    content:"";
+    clear:both;
+    display: table;
+}
+
+/* side */
+#right {
+    background-color: #e5e5e5;
+    float:left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    font-size: small;
+}
